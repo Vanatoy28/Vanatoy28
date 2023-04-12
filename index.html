@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+<body>
+
+    <h1>Calculator</h1>
+
+    <div class="container">
+
+        <br>
+
+        <input class = "text" id = "calculate" placeholder = "0">
+        <input type ='button' value = 'AC' id = "clearButton">
+        
+        <br>
+        <br>
+    
+            <div class="row">
+            <div class="column">
+
+            <input type = "button" value = '1' onclick= "digit('1')"></input>
+            <input type = "button" value = '2' onclick= "digit('2')"></input>
+            <input type = "button" value = '3' onclick= "digit('3')"></input>
+            <input type = "button" value = '+' onclick = "operator('+')"></input>
+
+            </div>
+            </div>
+            
+            <div class="row">
+            <div class="column">
+
+            <input type = "button" value = '4' onclick = "digit('4')"></input>
+            <input type = "button" value = '5' onclick = "digit('5')"></input>
+            <input type = "button" value = '6' onclick = "digit('6')"></input>
+            <input type = "button" value = '-' onclick = "operator('-')"></input>
+    
+            </div>
+            </div>
+                
+            <div class="row">
+            <div class="column">
+            
+            <input type = "button" value = '7' onclick = "digit('7')"></input>
+            <input type = "button" value = '8' onclick = "digit('8')"></input>
+            <input type = "button" value = '9' onclick = "digit('9')"></input>
+            <input type = "button" value = 'x' onclick = "operator('*')"></input>
+    
+            </div>
+            </div>
+    
+            <div class="row">
+            <div class="column">
+           
+            <input type = "button" value = '.' onclick = "decimal('.')"></input>
+            <input type = "button" value = '0' onclick = "digit('0')"></input>
+            <input type = "button" value = '=' onclick = "answer('=')"></input>
+            <input type = "button" value = '/' onclick = "operator('/')" ></input>
+
+            </div>
+            </div>
+                
+      <script src = "script.js"></script>
+</body>
+</html>
